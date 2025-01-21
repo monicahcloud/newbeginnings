@@ -37,7 +37,7 @@ const NavBar = () => {
 
           {/* Hamburger Button (on small screens) */}
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-2xl text-violet-500">
+            <button onClick={toggleNavbar} className="text-2xl text-white">
               {isOpen ? (
                 <span className="text-4xl">&times;</span> // Close icon
               ) : (
@@ -59,7 +59,7 @@ const NavBar = () => {
               <a
                 key={id}
                 href={href}
-                className="capitalize text-2xl text-cyan-500 tracking-wider hover:text-cyan-800 duration-300"
+                className="capitalize text-2xl text-violet-500 tracking-wider hover:text-violet-800 duration-300"
                 onClick={() => setIsOpen(false)} // Close menu on click
               >
                 {text}
