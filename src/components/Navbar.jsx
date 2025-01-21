@@ -11,23 +11,16 @@ const NavBar = () => {
   return (
     <div className="relative z-10 w-full bg-violet-950 shadow-sm">
       <nav className="relative flex items-center justify-between w-full ">
-        <div className="absolute inset-0 z-0 block w-full h-full max-w-screen-x px-5 py-5 mx-auto text-white lg:px-2 lg:shadow-none">
-          {/* Logo */}
-          {/* <div className="flex-shrink-0">
-            <h1 className=" text-2xl font-bold tracking-wider text-violet-600">
-              Sandra<span className="text-cyan-800">Williams</span>{' '}
-            </h1>
-          </div> */}
-
+        <div className="absolute inset-0 z-0 block w-full h-full max-w-screen-x px-5 py-5 mx-auto lg:px-2 lg:shadow-none">
           {/* Links Container (centered on larger screens) */}
-          <div className="hidden md:flex justify-center w-full gap-x-10 text-violet-500 uppercase font-semibold px-5 py-1">
+          <div className="hidden md:flex justify-center w-full gap-x-10  text-amber-400  uppercase font-semibold px-5 py-1">
             {links.map((link) => {
               const { id, href, text } = link
               return (
                 <a
                   key={id}
                   href={href}
-                  className="capitalize text-2xl tracking-wider hover:text-white duration-300"
+                  className="capitalize text-3xl tracking-widest hover:text-white duration-300"
                 >
                   {text}
                 </a>
