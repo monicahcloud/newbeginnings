@@ -9,7 +9,7 @@ const Hero = () => {
            New Beginnings WorldWide Outreach Mininstries
           </h1>
           <p className="mt-2 text-3xl text-slate-100 capitalize tracking-wide">
-            We rise, we heal, we thrive - together, for everyone's benefit!
+       
           </p>
         </div>
       </div>
