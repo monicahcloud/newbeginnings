@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid'
 
 export const links = [
-  { id: nanoid(), href: '#home', text: 'home' },
+  // { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#about', text: 'about' },
   { id: nanoid(), href: '#events', text: 'events' },
   { id: nanoid(), href: '#requests', text: ' prayer requests' },
