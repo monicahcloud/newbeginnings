@@ -13,21 +13,20 @@ const EventsCard = () => {
           return (
             <article
               key={event.id}
-              className="bg-white, rounded-lg shadow-md hover:shadow-xl duration-300"
+              className="rounded-lg shadow-md hover:shadow-xl duration-300"
             >
               <img
                 src={event.img}
                 alt={event.title}
                 className="w-full object-fit rounded-t-lg h-1/2"
               />
-
-              <div className="capitalize p-8">
-                <h2 className="text-4xl text-white tracking-wide text-center font-medium">
+              <div className="capitalize p-4">
+                <h2 className="text-3xl text-white tracking-wide text-center font-medium">
                   {event.title}
                 </h2>
-                <div className="text-center font-semibold">
-                  <h4 className="mt-4 text-xl text-white">{event.location} </h4>
-                  <h4 className="mt-4 text-xl text-white ">{event.date}</h4>
+                <div className="text-center text-white font-semibold">
+                  <h4 className="mt-4 text-xl ">{event.location} </h4>
+                  <h4 className=" text-xl ">{event.date}</h4>
                 </div>
               </div>
             </article>

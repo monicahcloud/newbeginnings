@@ -6,7 +6,6 @@ const Events = () => {
   return (
     <section className="pt-36 align-element " id="events">
       <Title text="Events" />
-
       <div className="">
         <EventCard/>
       </div>

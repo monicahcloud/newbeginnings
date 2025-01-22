@@ -87,7 +87,7 @@ const Donations = () => {
             <div className="mb-4 text-center text-gray-600">
               <p>
                 Send your donation to our CashApp:{' '}
-                <strong className="text-purple-500">$Sandra1957</strong>
+                <strong className="text-purple-500">$Nubegining8</strong>
               </p>
             </div>
           )}
