@@ -2,6 +2,9 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       backgroundImage: {
         parallax: 'url("../public/croppedpurpleandgold.jpg")',

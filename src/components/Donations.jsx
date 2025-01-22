@@ -1,5 +1,5 @@
 import  { useState } from 'react'
-import img from '../../public/donatebg.svg'
+
 
 const Donations = () => {
   const [amount, setAmount] = useState('')
@@ -20,7 +20,10 @@ const Donations = () => {
   }
 
   return (
-    <div className="flex justify-center">
+    <div id='donate' className="flex justify-center mt-20">
+        <div className="">
+            <h1></h1>
+        </div>
       <div className=" bg-white shadow-md rounded-lg p-6 w-full max-w-lg m-9">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
           Support Our Mission
