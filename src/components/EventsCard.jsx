@@ -13,7 +13,7 @@ const EventsCard = () => {
           return (
             <article
               key={event.id}
-              className="rounded-lg shadow-md hover:shadow-xl duration-300"
+              className="rounded-lg shadow-md hover:shadow-xl duration-300 "
             >
               <img
                 src={event.img}

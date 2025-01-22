@@ -4,7 +4,7 @@ import Title from './Title'
 
 const Events = () => {
   return (
-    <section className="pt-36 align-element " id="events">
+    <section className="pt-20 align-element " id="events">
       <Title text="Events" />
       <div className="">
         <EventCard/>
