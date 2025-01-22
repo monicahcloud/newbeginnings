@@ -9,8 +9,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className="sticky top-0 z-20 w-full shadow-sm">
-      <nav className="relative flex items-center justify-between w-full  px-5 py-4">
+    <div className="sticky top-0 z-20 w-full shadow-sm bg-fushia-950">
+      <nav className="relative flex items-center justify-between w-full bg-fushia-950 px-5 py-4">
         {/* Desktop Links */}
         <div className="hidden lg:flex justify-center w-full gap-x-10 text-amber-400 uppercase font-semibold">
           {links.map((link) => {
@@ -19,7 +19,7 @@ const NavBar = () => {
               <a
                 key={id}
                 href={href}
-                className="capitalize text-lg tracking-wide hover:text-white transition duration-300"
+                className="capitalize bg-fushia-950 text-lg tracking-wide hover:text-white transition duration-300"
               >
                 {text}
               </a>
@@ -28,10 +28,10 @@ const NavBar = () => {
         </div>
 
         {/* Hamburger Button for Mobile */}
-        <div className="lg:hidden">
+        <div className="lg:hidden ">
           <button
             onClick={toggleNavbar}
-            className="text-3xl text-white focus:outline-none"
+            className="text-5xl  text-white focus:outline-none"
           >
             {isOpen ? (
               <span className="text-4xl">&times;</span> // Close icon
