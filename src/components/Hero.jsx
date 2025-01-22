@@ -8,10 +8,10 @@ const Hero = () => {
     >
       <div className="w-full h-screen flex justify-center text-center items-center">
         <div className="container  mb-40">
-          <h1 className="text-white text-7xl w-full  uppercase font-bold  md:text-7xl ">
+          <h1 className="text-white text-6xl w-full  uppercase font-bold  md:text-5xl ">
             New Beginnings Outreach WorldWide Mininstries
           </h1>
-          <p className="mt-2  text-2xl md:text-3xl text-slate-100 font-semibold capitalize tracking-wide">
+          <p className="mt-2  text-3xl md:text-3xl text-slate-100 font-semibold capitalize tracking-wide">
             Where Faith Restores, Hope Rebuilds, and Lives Begin Anew.
           </p>
         </div>
