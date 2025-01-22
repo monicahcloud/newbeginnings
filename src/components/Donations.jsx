@@ -20,8 +20,8 @@ const Donations = () => {
   }
 
   return (
-    <div className="bg-fixed bg-donatebg bg-cover  flex items-center justify-center h-full">
-      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-lg m-9">
+    <div className="flex justify-center">
+      <div className=" bg-white shadow-md rounded-lg p-6 w-full max-w-lg m-9">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
           Support Our Mission
         </h1>

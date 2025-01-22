@@ -5,7 +5,7 @@ import Donations from "./components/Donations"
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-fixed bg-appbg bg-cover">
       <Navbar/>
      <Hero/>
      <Donations/>

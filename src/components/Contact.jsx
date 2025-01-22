@@ -26,9 +26,9 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="antialiased bg-purple-900 pt-10">
-      <div className="flex w-full max-h-screen justify-center items-center">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 w-full max-w-6xl p-8 md:rounded-xl shadow-lg bg-purple-800 text-white overflow-hidden">
+    <div id="contact" className="antialiased pt-20">
+      <div className="flex w-full h-full justify-center items-center">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 w-full max-w-6xl p-8 md:rounded-xl shadow-lg text-white overflow-hidden">
           {/* Left Column: Contact Information */}
           <div className="flex flex-col space-y-8 md:w-1/2">
             <h1 className="font-bold text-5xl tracking-wide text-center">
@@ -57,11 +57,8 @@ const Contact = () => {
               </div> */}
             </div>
           </div>
-          <div className="relative">
-            <div className="z-0 absolute w-40 h-40 bg-violet-400 rounded-full left-96 -top-20"></div>
-            <div className="z-0 absolute w-40 h-40 bg-violet-500 rounded-full -left-28 -bottom-28"></div>
-          </div>{' '}
-          <div className=" relative z-10 bg-violet-100 rounded-xl shadow-lg p-8 text-gray-600 md:w-80 lg:w-1/2">
+
+          <div className=" relative z-10 rounded-xl shadow-lg p-8 text-gray-600 md:w-80 lg:w-1/2">
             {/* Right Column: Contact Form */}
             <form
               ref={form}
@@ -69,7 +66,7 @@ const Contact = () => {
               className="flex flex-col space-y-4"
             >
               <div>
-                <label htmlFor="name" className="text-sm">
+                <label htmlFor="name" className="text-xl text-white">
                   Your Name
                 </label>
                 <input
@@ -81,7 +78,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="text-sm">
+                <label htmlFor="email" className="text-xl text-white">
                   Email Address
                 </label>
                 <input
@@ -93,7 +90,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="text-sm">
+                <label htmlFor="message" className="text-xl text-white">
                   Message
                 </label>
                 <textarea
@@ -104,7 +101,7 @@ const Contact = () => {
                   className="ring-1 ring-gray-300 w-full rounded-md px-4 mt-2 py-2 outline-none focus:ring-2 focus:ring-purple-300"
                 />
               </div>
-              <button className="inline-block self-end bg-purple-700 font-bold text-white rounded-lg px-6 py-2 uppercase text-sm">
+              <button className="inline-block self-end bg-violet-500 font-bold text-white rounded-lg px-6 py-2 uppercase text-sm">
                 Send Message
               </button>
             </form>
