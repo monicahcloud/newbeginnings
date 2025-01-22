@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-fixed bg-parallax bg-cover flex items-center justify-center h-full"
+      className="bg-fixed bg-parallax bg-cover  flex items-center justify-center h-full"
     >
       <div className="w-full h-screen flex items-end md:items-center bg-blackOverlay">
         <div className="container mx-auto mb-40">
