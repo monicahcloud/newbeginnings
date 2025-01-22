@@ -2,10 +2,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="sm:bg-contain md:bg-fixed bg-parallax bg-cover flex  h-full"
+      className="sm:bg-contain md:bg-fixed bg-parallax md:bg-cover flex  h-full"
     >
       <div className="w-full h-screen flex justify-center text-center items-center">
-        <div className=" mb-0">
+        <div className="  mb-0">
           <h1 className="text-white text-5xl font-serif w-full uppercase font-bold md:text-8xl">
             New Beginnings Outreach WorldWide Mininstries
           </h1>
