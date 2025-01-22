@@ -1,58 +1,66 @@
 import { useState } from 'react'
-import { links } from '../data'
+import { links } from '../data' // Ensure this file exports an array of link objects
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen)
+    setIsOpen((prev) => !prev)
   }
 
   return (
-    <div className="sticky top-0 z-[20] w-full  shadow-sm">
-      <nav className="relative  flex items-center justify-between w-full ">
-        <div className="absolute inset-0 z-0 block w-full h-full max-w-screen-x px-5 py-5 mx-auto lg:px-2 lg:shadow-none">
-          {/* Links Container (centered on larger screens) */}
-          <div className="hidden lg:flex justify-center w-full gap-x-10  text-amber-400  uppercase font-semibold px-5 py-1">
-            {links.map((link) => {
-              const { id, href, text } = link
-              return (
-                <a
-                  key={id}
-                  href={href}
-                  className="capitalize text-3xl tracking-wide hover:text-white duration-300"
-                >
-                  {text}
-                </a>
-              )
-            })}
-          </div>
-
-          {/* Hamburger Button (on small screens) */}
-          <div className="lg:hidden">
-            <button onClick={toggleNavbar} className="text-3xl text-white">
-              {isOpen ? (
-                <span className="text-4xl">&times;</span> // Close icon
-              ) : (
-                <span className="text-4xl">&#9776;</span> // Hamburger icon
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div
-          className={`md:hidden absolute top-20 left-0 w-full bg-white flex flex-col items-center gap-5 py-4 transition-all duration-300 ease-in-out ${
-            isOpen ? 'block' : 'hidden'
-          }`}
-        >
+    <div className="sticky top-0 z-20 w-full shadow-sm">
+      <nav className="relative flex items-center justify-between w-full  px-5 py-4">
+        {/* Desktop Links */}
+        <div className="hidden lg:flex justify-center w-full gap-x-10 text-amber-400 uppercase font-semibold">
           {links.map((link) => {
             const { id, href, text } = link
             return (
               <a
                 key={id}
                 href={href}
-                className="capitalize text-2xl text-violet-500 tracking-wider hover:text-violet-800 duration-300"
+                className="capitalize text-lg tracking-wide hover:text-white transition duration-300"
+              >
+                {text}
+              </a>
+            )
+          })}
+        </div>
+
+        {/* Hamburger Button for Mobile */}
+        <div className="lg:hidden">
+          <button
+            onClick={toggleNavbar}
+            className="text-3xl text-white focus:outline-none"
+          >
+            {isOpen ? (
+              <span className="text-4xl">&times;</span> // Close icon
+            ) : (
+              <span className="text-4xl">&#9776;</span> // Hamburger icon
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Menu with Slide-in Effect */}
+        <div
+          className={`fixed top-0 left-0 h-screen w-64 bg-white flex flex-col items-start gap-5 py-4 px-5 transform transition-transform duration-300 ease-in-out ${
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+        >
+          {/* Close Button Inside Menu */}
+          <button
+            onClick={toggleNavbar}
+            className="self-end text-3xl text-purple-950 mb-4"
+          >
+            &times;
+          </button>
+          {links.map((link) => {
+            const { id, href, text } = link
+            return (
+              <a
+                key={id}
+                href={href}
+                className="capitalize text-lg text-violet-500 tracking-wide hover:text-violet-800 transition duration-300"
                 onClick={() => setIsOpen(false)} // Close menu on click
               >
                 {text}

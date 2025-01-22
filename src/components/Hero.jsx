@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-fixed bg-parallax bg-cover flex sm:h-1/2 h-full"
+      className="sm:bg-fit bg-fixed bg-parallax bg-cover flex sm:h-1/2 h-full"
     >
       <div className="w-full h-screen flex justify-center text-center items-center">
         <div className=" mb-0">
