@@ -9,7 +9,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className="sticky top-0 z-20 w-full shadow-sm bg-fushia-950">
+    <div className="sticky top-0 z-20 w-full shadow-sm bg-purple-950">
       <nav className="relative flex items-center justify-between w-full bg-fushia-950 px-5 py-4">
         {/* Desktop Links */}
         <div className="hidden lg:flex justify-center w-full gap-x-10 text-amber-400 uppercase font-semibold">
@@ -19,7 +19,7 @@ const NavBar = () => {
               <a
                 key={id}
                 href={href}
-                className="capitalize bg-fushia-950 text-lg tracking-wide hover:text-white transition duration-300"
+                className="capitalize text-2xl tracking-wide hover:text-white transition duration-300"
               >
                 {text}
               </a>

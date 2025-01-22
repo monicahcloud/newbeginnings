@@ -1,5 +1,6 @@
 import Title from "./Title"
 import aboutImg from '../../public/logo2.svg'
+
 const About = () => {
   return (
     <div className="pt-20 pb-5 lg:mb-24 align-element "id="about">
